@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --primary-color: #EDEDED;
+    --primary-bg-color: #05082A;
+    --secondary-bg-color: #FF1279;
+    --terciary-bg-color: #FF8801;
+    --titlte-color: #FF1279;
+    --text-color: #05082A;
+    --icon-color: #05082A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    list-style: none;
+}
+
+body {
+    background-color: var(--primary-bg-color);
+    font-family: "Libre Baskerville", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+i {
+    color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    gap: 1.5rem;
+}
+
+.header_brand .logo {
+    width: 5.75rem;
+    height: 1.0625rem;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.menu-link {
+    list-style: none;
+    color: var(--primary-color);
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    gap: 1rem;
+}
+
+.menu-link:hover {
+    font-weight: 600;
+}
+
+/* main */
+
+main {
+    display: flex;
+    width: 17.375rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+p {
+    padding: 0.5rem;
+}
+
+.hello {
+    color: var(--primary-color);
+    font-size: 0.5rem;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+}
+
+
+.button-primary {
+    background-color: #FF8801;
+    color: var(--text-color);
+    display: flex;
+    padding: 0.25rem 0.5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    border-radius: 6.25rem;
+    font-family: "Libre Baskerville";
+    font-size: 0.5rem;
+}
+
+.button-primary:hover {
+    background-color: var(--secondary-bg-color);
+}
+
+.title-designer {
+    color: var(--titlte-color);
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.title-description {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 0.75rem;
+    word-wrap: break-word;
+    word-break: normal;
+}
+
+#projetos {
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    flex-direction: column;
+    width: 23.4375rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 1.375rem;
+}
+
+#projeto1 {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 0.5rem;
+align-self: stretch;
+}
+
+#project-title {
+    color: #05082A;
+    font-size: 1.25rem;
+    text-align: center;
+    align-self: stretch;
+}
+
+.image-project{
+    width: 100%;
+    height: auto;
+}
+
+.hability {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+    align-items:flex-start;
+    justify-content:left;
+    width: 100%;
+}
+
+.habilidades {
+    background-color: var(--terciary-bg-color);
+    display: flex;
+    padding: 0.125rem 0.25rem;
+    gap: 0.625rem;
+    border-radius: 6.25rem;
+    color: var(--primary-color);
+    font-size: 0.46rem;
+    
+}
+
+#case-title {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 700;
+    
+}
+.see-more {
+    background-color: transparent;
+    border-radius: 6.25rem;
+    border: 1px solid var(--primary-bg-color);
+    display: flex;
+    padding: 0.25rem 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    font-family: "Libre Baskerville";
+    font-size: 0.5rem;
+
+}
+
+.see-more:hover {
+    background-color: var(--primary-bg-color);
+    color: #FF1279;
+    
+}
+
+#i-do{
+    color: #FF1279;
+    text-align: center;
+    font-size: 1.25rem;
+    padding-top: 1rem;
+    gap: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#type-hability {
+    display: flex;
+    padding: 1rem 1.25rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #FF8801;
+    margin: 1rem;
+}
+
+#hability-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #FF8801;
+}
+
+.image-hability {
+    width:21rem;
+    object-fit: cover;
+}
+
+.see-all {
+    background-color: transparent;
+    display: flex;
+    padding: 0.25rem 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 6.25rem;
+    border: 1px solid #FF8801;  
+    color: #FF8801;
+    text-align: center;
+    font-size: 0.5rem;
+}
+
+.see-all:hover {
+    background-color:#FF8801;  
+    color:#05082A
+}
+
+
+/* fundo de flor */
+.background-container {
+  position: fixed; /* Mantém o fundo fixo na tela */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Permite que cliques passem para o conteúdo */
+  z-index: -1; /* Coloca o fundo atrás do conteúdo */
+}
+
+.background-left {
+  position: absolute;
+  top: 40%; /* Centraliza verticalmente */
+  left: -10%; /* Ajuste a distância da esquerda */
+  max-height: 32.5625rem; /* Ajuste o tamanho conforme necessário */
+  transform: translateY(-50%); /* Ajusta o alinhamento vertical */
+  transition: transform 0.2s linear; /* Adiciona uma transição suave */
+}
+
+.background-right {
+  position: absolute;
+  top: 20%; /* Centraliza verticalmente */
+  right: -4%; /* Ajuste a distância da direita */
+  max-height: 35.75rem;/* Ajuste o tamanho conforme necessário */
+  transform: translateY(-50%); /* Ajusta o alinhamento vertical */
+  transition: transform 0.2s linear; /* Adiciona uma transição suave */
+}
+
+#footer {
+    margin-top: 1rem;
+    display: flex;
+    width: 100vw;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    background: #FF8801;
+}
+
+#find-me{
+    color: var(--text-color);
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+#icons {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 1rem;
+    align-self:stretch;
+}
+    
+.social-icon svg {
+  width: 24px; 
+  height: 24px;
+  fill: var(--icon-color)
+}
+
+.rights {
+    align-self: stretch;
+    color: var(--text-color);
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+/* responsivo */
+/* desktop */
+@media (min-width: 768px) {
+    
+.header_brand .logo {
+    width: 13.5rem;
+    height: 2.5rem;
+}
+
+.menu{
+ gap: 2rem;
+ padding-top: 1rem;
+}
+
+.menu-link {
+    font-size: 1rem;
+
+}
+
+
+main {
+    width: 59.875rem;
+    gap: 1rem;
+    padding-top: 2.5rem;
+}
+
+.hello {
+    font-size: 1rem;
+}
+
+.title-designer {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.title-description {
+    font-size: 1.5rem;
+    max-width: 34.5rem;
+    font-weight: 400;
+}
+
+.button-primary {
+    font-size: 1rem;
+}
+
+#projetos {
+    max-width: 1440px;
+    width: auto;
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: center;
+align-items: flex-start;
+}
+
+#projeto1 {
+gap: 1rem;
+}
+
+#project-title {
+    font-size: 2.5rem;
+    text-align: center;
+    
+}
+
+.image-project {
+    max-height: auto;
+    max-width: 86rem;
+    border-radius: 8px;
+}
+
+.habilidades {
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+    
+}
+
+#case-title {
+    font-size: 2rem;
+    padding-bottom: 0.1rem;
+}
+
+.see-more {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+#i-do{
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    flex-direction: column; 
+    align-items: center;   
+    gap: 2.375rem;
+
+}
+
+#type-hability {
+    padding: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #FF8801;
+}
+
+#hability-title {
+    font-size: 2rem;
+}
+
+#image-hability {
+    width: 23.0625rem;
+    height: auto;
+}
+
+.see-all {
+    font-size: 1rem;
+}
+
+#row-one,
+#row-two {
+    display: flex;
+    flex-direction: row;;
+    justify-content: center;
+}
+
+#row-two {
+    padding-bottom: 1rem;
+}
+
+#footer {
+    gap: 2rem;
+}
+
+#find-me{
+    color: var(--text-color);
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#icons {
+    gap: 2rem;
+}
+    
+.social-icon svg {
+  width: 40px; 
+  height: 40px;
+  fill: var(--icon-color)
+}
+
+.rights {
+    font-size: 1rem;
+}
+
+}
+
+/* table e mobile changes */
+@media (max-width: 1225px) {
+    /* .background-container{
+        display: none;
+    }
+    .background-left,
+    .background-right{
+        display: none;
+    } */
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Permite que cliques passem para o conteúdo */
+  z-index: -1; /* Coloca o fundo atrás do conteúdo */
+}
+
+.background-left {
+  position: absolute;
+  top: 25%; /* Centraliza verticalmente */
+  left: -20%; /* Ajuste a distância da esquerda */
+  max-height: 12rem; /* Ajuste o tamanho conforme necessário */
+  transform: translateY(-50%); /* Ajusta o alinhamento vertical */
+  transition: transform 0.2s linear; /* Adiciona uma transição suave */
+}
+
+.background-right {
+  position: absolute;
+  top: 15%; /* Centraliza verticalmente */
+  right: -25%; /* Ajuste a distância da direita */
+  max-height: 15rem;/* Ajuste o tamanho conforme necessário */
+  transform: translateY(-50%); /* Ajusta o alinhamento vertical */
+  transition: transform 0.2s linear; /* Adiciona uma transição suave */
+}
+}
